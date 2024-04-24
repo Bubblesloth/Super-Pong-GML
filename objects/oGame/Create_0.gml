@@ -37,7 +37,7 @@ global.volumesfx = (global.sfx/100) * (global.music/100)
 //Constants
 
 #macro enter (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space))
-#macro echap (keyboard_check_pressed(vk_escape) ||keyboard_check_pressed(vk_backspace))
+#macro echap (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_backspace))
 
 //Scripts
 

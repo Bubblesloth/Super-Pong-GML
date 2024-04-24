@@ -8,7 +8,7 @@ if room == Game || room == Difficulty{
 // TITLESCREEN
 
 if room == TitleScreen{
-
+	
 if global.firstlaunch = true{
 if oIntroPart1.timer == 739 - firstL - oIntroPart1.firstL{
 	instance_create_layer(x, y, "Instances", oBalle);
