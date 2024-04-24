@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"slot_2",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":0.301859,
+  "name":"slot_2",
+  "parent":{
+    "name":"Menu",
+    "path":"folders/Sons/Menu.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"slot_2.wav",
+  "type":0,
+  "volume":1.0,
+}

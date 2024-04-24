@@ -1,0 +1,65 @@
+si online
+	si player id = j1
+		commandset1 = commandset
+	si player id = j2
+		commandset2 = commandset
+		
+pour commandset = 0 -> up down
+	commandset1 = 0 -> up down
+	commandset2 = 0 -> up down
+	commandset2 += 2
+	commandset2 = 2 -> Z S
+	
+si playerid = j1
+	switch(commandset1){
+		case0 !!!
+			up down
+			break;
+		case1
+			W S
+			break;
+		case2
+			Z S
+			break;
+	}
+	
+si playerid = j2
+	switch(commandset2){
+		case0
+			up down
+			break;
+		case1
+			W S
+			break;
+		case2 !!!
+			Z S
+			break;
+	}
+	
+P1 appuie sur vk_up -> up = 1 -> x+=1
+P1 appuie sur Z -> RIEN
+
+P2 appuie sur vk_up -> RIEN
+P2 appuie sur Z -> up = 1 -> x+=1
+
+
+
+
+
+WAITING FOR PLAYER 2...
+
+si player 1:
+
+PLAYER 2 IS DOING HIS SETTINGS :
+
+si player 2:
+
+Menu commandes
+
+
+optionnel:
+
+CHOOSE A GAMEMODE
+exemple : joueur 1 fait un contour rouge et j2 un contour bleu
+
+3 2 1 start

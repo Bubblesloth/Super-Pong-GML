@@ -1,0 +1,72 @@
+Actuel (au moment où j'écris) :--------------
+
+Zoom effect quand ça marque
+Finir le mode normal genre tu peux gagner
+Ajouter scoremode dans Difficulty où t'affronte un mur (animation Ennemi qui s'étend ?)
+Après hard dans Difficulty, ajouter l'option mouse où c'est plus dur mais ça se joue à la souris donc on peut être super rapide
+Me motiver à faire personnalised Pong un jour (mettre un disclaimer comme quoi il n'y a pas de limites et que des valeurs abusées peuvent faire bugger le jeu)
+
+
+
+----------------------
+
+
+
+TOUT DEPLACé DANS LE TRELLO
+
+
+
+
+Konami Code : A chaque fois que ça tape ça fait un bruitage différent de moi qui dit "PONG"
+
+Faire un menu qui présente plusieurs modes de jeux comme ceux-ci :
+
+
+Le mode classique
+
+Mode classique avec niveaux de difficultés suivant la vitesse du bot et de la balle
+
+Le mode score où soit l'ennemie renvoie à tous les coups et on doit avoir un max de frappes, soit pareil mais on frappe contre un mur
+	
+Un mode avec un ennemie au centre qui nous lance des projectiles à éviter mais si on tire sur l'ennemie, il va attaquer la paddle ennemie et inversement ~~~
+
+Un mode où moi je suis bleu, l'ennemie vert ou jsp comment, et il y a au millieu un coeur avec une moitié vert de mon côté et une moitié bleu de son côté et on doit chacun tuer l'adversaire en renvoyant la balle sur le coeur
+
+Voir pour un mode avec plusieurs balles
+
+Un mode hard où plus le temps avance, plus on est petit (changer yscale)
+
+
+
+Faire un système de skins mais donc de sauvegarde aussi
+Des succes pour unlock les skins
+
+
+Un jour régler le bug des murs peut-être (aled)
+
+
+Mode DE JEU SYMPA
+
+Un jeu pong mais j'ai des obstacles qui popent genre des murs qui popent et je dois cliquer dessus en même temps avec la souris pour les supprimer.
+Il faut que les murs m'embêtent que moi donc par exemples quand je tire la balle elle est bleu, et quand c'est l'ennemie elle est rouge
+Et donc les murs obstacles sont bleus pour que je comprenne que seul ma balle les touches.
+
+MODE DE JEU SYMPA 2
+
+T'es une balle en pleins milieu d'une partie de bots et tu dois éviter les balles. T'as un score qui augmente au fur et à mesure, puis la difficulté augmente.
+
+
+
+Nouveau menu : 
+
+Quand j'appuye sur player, ça me demande directe si je veux jouer en solo, en local ou en online (avec un message d'erreur sur ce dernier)
+Puis ensuite ça me redirige vers selectGM
+
+
+FINALITé :
+Un mode roguelike ??? Genre tu dois aller le plus loin avec des modes aléatoires, difficulté qui augmente au fur et à mesure
+Les modes de jeux auront besoin d'avoir été gagnés 5 fois en roguelike pour être débloqué (à revoir si c'est trop chiant / Nul)
+
+
+Faire les crédits où c'est mon moment de gloire car j'ai tout fait tout seul (mentionner le moteur car pourquoi pas)
+

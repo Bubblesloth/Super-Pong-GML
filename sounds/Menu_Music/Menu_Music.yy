@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"Menu_Music",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":512,
+  "compression":0,
+  "conversionMode":0,
+  "duration":175.38463,
+  "name":"Menu_Music",
+  "parent":{
+    "name":"Menu",
+    "path":"folders/Sons/Menu.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"menu_music.wav",
+  "type":1,
+  "volume":1.0,
+}

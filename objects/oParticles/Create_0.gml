@@ -1,0 +1,9 @@
+x = random_range(0, room_width);
+y = random_range(0, room_height);
+limtimer = irandom_range(2*60,6*60);
+timer=0;
+direction = 0;
+speed = random_range(0.1,1);
+alpha=0;
+incAlpha = false;
+decAlpha = false;
