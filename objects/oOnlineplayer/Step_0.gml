@@ -29,7 +29,7 @@ var _input = rollback_get_input();
  
 	//Easter Egg si le jeu a un bug et fait que ça fait trop longtemps qu'on a pas touché la balle (ici dans le menu)
 
-	if room = TitleScreen && instance_exists(oSoftLockBall){
+	if instance_exists(oSoftLockBall){
 		if bugtimer = 1000{
 		
 		drawbugtext = true

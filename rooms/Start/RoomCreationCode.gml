@@ -1,5 +1,6 @@
-global.firstlaunch = false
+global.firstlaunch = true
 global.difficulty = 1
+global.mousegamemode = false
 global.multi = false
 global.online = false
 

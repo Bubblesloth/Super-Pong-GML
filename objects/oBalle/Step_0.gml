@@ -101,6 +101,15 @@ if keyboard_check_pressed(vk_alt){
 
 if place_meeting(x,y,oPlayer){
 
+	//Ceci pour le oSoftLock (voir dans oPlayer Step)
+	if instance_exists(oSoftLockBall){
+		oPlayer.bugtimer = 0
+		oPlayer.drawbugtext = false
+		oSoftLockBall.Ilyaeuunpoint = 0;
+		show_message("ok")
+	}
+	/////////////////////////////////////
+
 	x+=speed  // POUR NE PAS PASSER A TRAVERS Et pour ne pas tricher en faisant plusieurs renvois (je me comprends)
 	
 

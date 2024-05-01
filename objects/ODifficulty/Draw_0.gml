@@ -88,6 +88,7 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = 1
+			global.mousegamemode = false
 			room_goto(Game);
 		}
 		
@@ -102,6 +103,7 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = 2
+			global.mousegamemode = false
 			room_goto(Game);
 		}
 		
@@ -116,6 +118,7 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = 3
+			global.mousegamemode = false
 			room_goto(Game);
 		}
 		
@@ -129,7 +132,8 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 3
+			global.difficulty = 4
+			global.mousegamemode = true
 			room_goto(Game);
 		}
 		
@@ -144,6 +148,7 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = 3
+			global.mousegamemode = false
 			room_goto(Game);
 		}
 		
@@ -168,6 +173,7 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = 1
+			global.mousegamemode = false
 			global.start_local = true
 			room_goto(MultiGM);
 		}
@@ -183,6 +189,7 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = 2
+			global.mousegamemode = false
 			global.start_local = true
 			room_goto(MultiGM);
 		}
@@ -198,6 +205,7 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = 3
+			global.mousegamemode = false
 			global.start_local = true
 			room_goto(MultiGM);
 		}

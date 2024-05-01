@@ -1,5 +1,3 @@
-y = mouse_y
-
 //On met les variables de déplacement en place
 	var up = global.up
 	var down = global.down
@@ -46,7 +44,7 @@ if y > room_height - sprite_height/2 y = room_height - sprite_height/2
  
 //Easter Egg si le jeu a un bug et fait que ça fait trop longtemps qu'on a pas touché la balle (ici dans le menu)
 
-if room = TitleScreen && instance_exists(oSoftLockBall){
+if instance_exists(oSoftLockBall){
 	if bugtimer = 1000{
 		
 	drawbugtext = true
@@ -55,11 +53,13 @@ if room = TitleScreen && instance_exists(oSoftLockBall){
 	else {
 		bugtimer++
 		drawbugtext = false}
-	
-	if place_meeting(x,y,oBalle) || oSoftLockBall.Ilyaeuunpoint = 1{
+
+	if /*place_meeting(x,y,oBalle) || */oSoftLockBall.Ilyaeuunpoint == 1{ 	//DEPLACé DANS EVENT DE COLLISION DE LA BALLE CAR NE MARCHE PAS POUR LE PLACE MEETING
 		bugtimer = 0
+		drawbugtext = false
 		oSoftLockBall.Ilyaeuunpoint = 0;
 	}
+
 }
 
 // Fire Shot part 2 (part en dans oBalle)

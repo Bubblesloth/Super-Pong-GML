@@ -3,7 +3,6 @@
 global.volumemusic = (global.music/100) * (global.gsound/100)
 global.volumesfx = (global.sfx/100) * (global.gsound/100)
 
-
 //Music
 
 if global.musicOn = true && global.musicplaying = false{
@@ -44,4 +43,8 @@ if global.musicplaying = true{
 		global.musicloop = 0;
 	}
 	else global.musicloop++
+}
+
+if keyboard_check(vk_space){
+	show_message(global.musicloop)
 }
