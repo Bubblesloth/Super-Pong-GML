@@ -7,8 +7,8 @@ else firstL = 0
 
 //Debug
 
-/*if room != Options{
-	room_goto(Options)}*/
+/*if room != rOptions{
+	room_goto(rOptions)}*/
 
 //Locales
 
@@ -67,7 +67,7 @@ if global.online == true{
 
 //Particles
 
-if room == Game{
+if room == rGame{
 	var i_particles = 0
 	while i_particles < 30{
 		instance_create_layer(x,y, "Instances", oParticles);

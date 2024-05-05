@@ -4,7 +4,7 @@
 
 //Bounce aux murs
 
-/*if room != Game{
+/*if room != rGame{
 if y < sprite_height/2 direction *= -1; //si la balle fait 60 pixels, alors /2 elle fait 30... Donc si y est plus petit que 30 donc si la balle est tt en haut et que l'origine et en dessous de 30, alors ça veut dire que le moitiée haut de la balle touche le plafond et doit donc rebondir avec le *=-1 déjà expliqué dans oEnnemie
 else if y > room_height	- sprite_height/2 direction *= -1; //Pareil mais pour rebondir en bas, room = 768, ensuite - 30 = 738 et c'est pareil ensuite mais avec plus grand que}
 ///ATTENTION, les collisions pour bounce sont plus bas, ici c'est un au cas où.
@@ -106,12 +106,10 @@ if place_meeting(x,y,oPlayer){
 		oPlayer.bugtimer = 0
 		oPlayer.drawbugtext = false
 		oSoftLockBall.Ilyaeuunpoint = 0;
-		show_message("ok")
 	}
 	/////////////////////////////////////
 
 	x+=speed  // POUR NE PAS PASSER A TRAVERS Et pour ne pas tricher en faisant plusieurs renvois (je me comprends)
-	
 
 	//Renvois de la balle
 
@@ -124,7 +122,7 @@ if place_meeting(x,y,oPlayer){
 		var maxx = oPlayer.sprite_height/2; //Moitié du player ex : 55
 		var ratio = (dif/maxx) * angle; //différence DIVISE par moitié du paddle MULTIPLIE par l'angle pas exacte ex : -30 / 55 = 0,5 || 0,5 * 50 = 25
 
-		if room != TitleScreen{
+		if room != rTitleScreen{
 			direction = ratio;
 			}
 		else direction = ratio + random_range(-10, 10) //Pour ne pas buger la balle sur l'écran titre
@@ -173,7 +171,7 @@ if place_meeting(x,y,oEnnemie){
 		var maxx = oEnnemie.sprite_height/2; //Moitié du player
 		var ratio = (dif/maxx) * angle; //différence DIVISE par moitié du paddle MULTIPLIE par l'angle pas exacte
 
-		if room != TitleScreen{
+		if room != rTitleScreen{
 			direction = ratio;
 		}
 		else direction = ratio + random_range(-10, 10) //Pour ne pas buger la balle sur l'écran titre

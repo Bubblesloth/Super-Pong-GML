@@ -2,7 +2,7 @@
 
 ballheight = sprite_height
 
-if room != TitleScreen{
+if room != rTitleScreen{
 x = room_width/2;
 y = room_height/2;
 }

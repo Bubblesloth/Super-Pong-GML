@@ -6,11 +6,11 @@ y = room_height/2
 
 //
 
-if room = TitleScreen{
+if room = rTitleScreen{
 speedy = 20;
 }
 
-if room != TitleScreen{
+if room != rTitleScreen{
 	
 	switch(global.difficulty){
 	

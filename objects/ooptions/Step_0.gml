@@ -4,7 +4,7 @@ draw_set_valign(fa_top);
 
 if echap && sousmenu = false{
 	audio_play_sound(Select, 3, false)
-	room_goto(TitleScreen)}
+	room_goto(rTitleScreen)}
 
 //Commandes
 

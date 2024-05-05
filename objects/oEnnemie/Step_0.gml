@@ -1,4 +1,4 @@
-if room != MultiGM{
+if room != rMultiGM{
 
 //follow the Ball
 

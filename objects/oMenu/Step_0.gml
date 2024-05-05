@@ -70,7 +70,7 @@ switch (menu){
 		image_index	= 0
 		if enter{
 			global.firstlaunch = false
-			room_goto(SelectGM);
+			room_goto(rSelectGM);
 			audio_play_sound(Select, 3, false)
 			}
 	break;
@@ -79,7 +79,7 @@ switch (menu){
 		image_index = 1
 		if enter{
 			global.firstlaunch = false
-			room_goto(Options);
+			room_goto(rOptions);
 			audio_play_sound(Select, 3, false)
 			}
 	break;	

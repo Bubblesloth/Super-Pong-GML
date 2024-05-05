@@ -1,6 +1,6 @@
 function BallSpeed(){
 	
-	if room != TitleScreen{
+	if room != rTitleScreen{
 		
 		switch(global.difficulty){
 		
@@ -28,7 +28,7 @@ function BallSpeed(){
 		}
 
 	}
-	else if room == TitleScreen{
+	else if room == rTitleScreen{
 		oBalle.speed = 10
 		maxspeed = 30}
 }

@@ -1,13 +1,13 @@
-if room == Game || room == Difficulty{
+if room == rGame || room == rDifficulty{
 	if echap{
 		audio_play_sound(Select, 3, false)
 		if (global.multi) global.multi=false
-		room_goto(SelectGM)}
+		room_goto(rSelectGM)}
 }
 
 // TITLESCREEN
 
-if room == TitleScreen{
+if room == rTitleScreen{
 	
 if global.firstlaunch = true{
 if oIntroPart1.timer == 739 - firstL - oIntroPart1.firstL{
@@ -33,7 +33,7 @@ else{
 //Timer
 
 
-if room == Game{
+if room == rGame{
 
 	if spawntimer = true{
 		instance_create_layer(x, y, "Instances", oTimer);

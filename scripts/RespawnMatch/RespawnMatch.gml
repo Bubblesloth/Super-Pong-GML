@@ -6,7 +6,7 @@ function RespawnMatch(){
 	//Balle
 	
 	oBalle.x = room_width/2;
-	if room = TitleScreen{
+	if room = rTitleScreen{
 	oBalle.y = room_height/2 - 150;}
 	else oBalle.y = room_height/2
 	oBalle.timerdm = 1;

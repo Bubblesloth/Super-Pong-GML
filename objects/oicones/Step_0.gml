@@ -1,6 +1,6 @@
 if echap{
 	audio_play_sound(Select, 3, false)
-	room_goto(TitleScreen)}
+	room_goto(rTitleScreen)}
 
 //Déplacements
 
@@ -30,7 +30,7 @@ switch (menu){
 	global.GMchoice = 0;
 	if enter{
 		audio_play_sound(Select, 3, false);
-		room_goto(Difficulty);}
+		room_goto(rDifficulty);}
 	
 	break;
 	
@@ -46,7 +46,7 @@ switch (menu){
 	global.GMchoice = 2;
 	if enter{
 		audio_play_sound(Select, 3, false);
-		room_goto(MultiGM);}
+		room_goto(rMultiGM);}
 	
 	break;
 	
@@ -55,7 +55,7 @@ switch (menu){
 	global.GMchoice = 3;
 	if enter{
 		audio_play_sound(Select, 3, false);
-		room_goto(Game);}
+		room_goto(rGame);}
 	
 	break;
 }

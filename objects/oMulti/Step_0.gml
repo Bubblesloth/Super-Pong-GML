@@ -2,7 +2,7 @@
 
 if echap{
 	audio_play_sound(Select, 3, false)
-	room_goto(Difficulty)}
+	room_goto(rDifficulty)}
 	
 
 	////////////////////////
@@ -78,5 +78,5 @@ else{
 		global.p2commandset = commandsP2
 		
 		global.multi = true //ça sert à savoir si on créer un ennemi ou un Player2
-		room_goto(Game)
+		room_goto(rGame)
 }

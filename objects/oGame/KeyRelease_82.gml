@@ -1,3 +1,3 @@
-if room = Game{
+if room = rGame{
 room_restart()
 }

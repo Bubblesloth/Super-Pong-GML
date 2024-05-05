@@ -4,4 +4,4 @@ global.mousegamemode = false
 global.multi = false
 global.online = false
 
-room_goto(TitleScreen)
+room_goto(rTitleScreen)

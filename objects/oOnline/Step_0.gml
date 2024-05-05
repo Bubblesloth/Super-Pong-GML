@@ -1,9 +1,9 @@
-if room == OnlineMenu{
+if room == rOnlineMenu{
 	if echap{
 		audio_play_sound(Select, 3, false)
 		global.online = false
 		rollback_leave_game()
-		room_goto(MultiGM)
+		room_goto(rMultiGM)
 	}
 }
 

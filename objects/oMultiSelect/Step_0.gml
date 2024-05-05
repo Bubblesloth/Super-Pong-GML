@@ -3,7 +3,7 @@ draw_set_valign(fa_middle);
 
 if echap{
 	audio_play_sound(Select, 3, false)
-	room_goto(SelectGM)}
+	room_goto(rSelectGM)}
 
 
 if (global.up_pressed){
@@ -21,13 +21,13 @@ if select == 0{
 	if enter && global.start_local == false{
 		audio_play_sound(Select, 3, false)
 		global.online = true
-		room_goto(OnlineMenu)
+		room_goto(rOnlineMenu)
 	}
 }
 else{
 	if enter{
 		audio_play_sound(Select, 3, false);
-		room_goto(Difficulty);
+		room_goto(rDifficulty);
 	}
 }
 
