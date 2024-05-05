@@ -4,21 +4,21 @@ function BallSpeed(){
 		
 		switch(global.difficulty){
 		
-		case 1 :
+		case DIFFICULTY.EASY :
 		
 			oBalle.speed = 10;
 			maxspeed = 26
 		
 		break;
 		
-		case 2 :
+		case DIFFICULTY.MEDIUM :
 		
 			oBalle.speed = 13
 			maxspeed = 31
 		
 		break;
 		
-		case 3 :
+		case DIFFICULTY.HARD :
 			
 			oBalle.speed = 17
 			maxspeed = 32

@@ -8,15 +8,15 @@ y = room_height/2
 	
 switch(global.difficulty){
 	
-		case 1 :
+		case DIFFICULTY.EASY :
 			speedy = 9
 		break;
 	
-		case 2 :
+		case DIFFICULTY.MEDIUM :
 			speedy = 11
 		break;
 	
-		case 3 :
+		case DIFFICULTY.HARD :
 			speedy=13
 		break;	
 	}

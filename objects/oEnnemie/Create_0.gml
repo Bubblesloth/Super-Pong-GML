@@ -14,15 +14,15 @@ if room != rTitleScreen{
 	
 	switch(global.difficulty){
 	
-		case 1 :
+		case DIFFICULTY.EASY :
 			speedy =13
 		break;
 		
-		case 2 :
+		case DIFFICULTY.MEDIUM :
 			speedy = 17
 		break;
 		
-		case 3 :
+		case DIFFICULTY.HARD :
 			speedy = 20
 		break;	
 	}

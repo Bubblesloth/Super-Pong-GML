@@ -1,1 +1,1 @@
-selectdifficulty=1
+selectdifficulty = 1

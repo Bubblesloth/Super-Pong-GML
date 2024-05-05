@@ -87,8 +87,8 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 1
-			global.mousegamemode = false
+			global.difficulty = DIFFICULTY.EASY;
+			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 		
@@ -102,8 +102,8 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 2
-			global.mousegamemode = false
+			global.difficulty = DIFFICULTY.MEDIUM;
+			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 		
@@ -117,8 +117,8 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 3
-			global.mousegamemode = false
+			global.difficulty = DIFFICULTY.HARD;
+			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 		
@@ -132,8 +132,8 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 4
-			global.mousegamemode = true
+			global.difficulty = DIFFICULTY.MOUSEMODE;
+			global.mousegamemode = true;
 			room_goto(rGame);
 		}
 		
@@ -147,8 +147,8 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 3
-			global.mousegamemode = false
+			global.difficulty = DIFFICULTY.SCOREMODE;
+			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 		
@@ -172,7 +172,7 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 1
+			global.difficulty = DIFFICULTY.EASY;
 			global.mousegamemode = false
 			global.start_local = true
 			room_goto(rMultiGM);
@@ -188,7 +188,7 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 2
+			global.difficulty = DIFFICULTY.MEDIUM;
 			global.mousegamemode = false
 			global.start_local = true
 			room_goto(rMultiGM);
@@ -204,7 +204,7 @@ switch (selectdifficulty){
 		
 		if enter{
 			audio_play_sound(Select, 3, false);
-			global.difficulty = 3
+			global.difficulty = DIFFICULTY.HARD;
 			global.mousegamemode = false
 			global.start_local = true
 			room_goto(rMultiGM);
