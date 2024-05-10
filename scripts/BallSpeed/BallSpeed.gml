@@ -24,6 +24,13 @@ function BallSpeed(){
 			maxspeed = 32
 		
 		break;
+		
+		case DIFFICULTY.MOUSEMODE:
+		
+			oBalle.speed = 17
+			maxspeed = 35
+			
+		break;
 			
 		}
 

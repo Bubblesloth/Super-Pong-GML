@@ -1,20 +1,28 @@
-//On met les variables de déplacement en place
-	var up = global.up
-	var down = global.down
+if global.difficulty == DIFFICULTY.MOUSEMODE{
+	y = mouse_y
+}
+else{
 
-var input = down - up//keyboard_check(vk_down) - keyboard_check(vk_up)
+	//On met les variables de déplacement en place
+		var up = global.up
+		var down = global.down
 
-//Les déplacements (utilisation du script respawnmatch pour dontmove le player)
+	var input = down - up//keyboard_check(vk_down) - keyboard_check(vk_up)
 
-var move = speedy * input
-if dontmove=false{ //Pour empêcher le player de bouger
+	//Les déplacements (utilisation du script respawnmatch pour dontmove le player)
+
+	var move = speedy * input
+	if dontmove=false{ //Pour empêcher le player de bouger
 	
-//*/Accel
+	//*/Accel
 	
-vspd = walkplayer(vspd, move, accel); //Pour un mouvement plus fluide mais qui se voit presque pas et pas si on est pas au courant donc pas très utile mais modifiable à souhait
+	vspd = walkplayer(vspd, move, accel); //Pour un mouvement plus fluide mais qui se voit presque pas et pas si on est pas au courant donc pas très utile mais modifiable à souhait
 	
 	
-y += vspd;
+	y += vspd;
+
+}
+
 }
 
 if timerdm > 0{

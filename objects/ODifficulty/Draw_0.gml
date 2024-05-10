@@ -88,7 +88,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.EASY;
-			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 
@@ -103,7 +102,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.MEDIUM;
-			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 		
@@ -118,7 +116,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.HARD;
-			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 		
@@ -133,7 +130,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.MOUSEMODE;
-			global.mousegamemode = true;
 			room_goto(rGame);
 		}
 		
@@ -148,7 +144,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.SCOREMODE;
-			global.mousegamemode = false;
 			room_goto(rGame);
 		}
 		
@@ -173,7 +168,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.EASY;
-			global.mousegamemode = false
 			global.start_local = true
 			room_goto(rMultiGM);
 		}
@@ -189,7 +183,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.MEDIUM;
-			global.mousegamemode = false
 			global.start_local = true
 			room_goto(rMultiGM);
 		}
@@ -205,7 +198,6 @@ switch (selectdifficulty){
 		if enter{
 			audio_play_sound(Select, 3, false);
 			global.difficulty = DIFFICULTY.HARD;
-			global.mousegamemode = false
 			global.start_local = true
 			room_goto(rMultiGM);
 		}

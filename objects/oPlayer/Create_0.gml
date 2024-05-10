@@ -19,6 +19,11 @@ switch(global.difficulty){
 	case DIFFICULTY.HARD :
 		speedy=13
 	break;	
+	
+	case DIFFICULTY.MOUSEMODE:
+		speedy = 0
+	break;
+	
 }
 
 bugtimer = 0;

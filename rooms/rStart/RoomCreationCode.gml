@@ -2,7 +2,7 @@
 
 global.firstlaunch = false
 global.difficulty = DIFFICULTY.EASY
-global.mousegamemode = false
+ = false
 global.multi = false
 global.online = false
 
