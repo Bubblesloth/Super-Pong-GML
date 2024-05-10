@@ -1,6 +1,6 @@
 //Global variables setup
 
-global.firstlaunch = true
+global.firstlaunch = false
 global.difficulty = DIFFICULTY.EASY
 global.mousegamemode = false
 global.multi = false

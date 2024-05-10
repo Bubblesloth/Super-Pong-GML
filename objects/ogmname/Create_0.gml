@@ -1,1 +1,1 @@
-global.GMchoice = 0
+global.Gamemodechoice = 0

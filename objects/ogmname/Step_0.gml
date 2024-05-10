@@ -1,16 +1,16 @@
-switch (global.GMchoice){
+switch (global.Gamemodechoice){
 	
-	case 0 :
+	case GAMEMODE.CLASSIC :
 	image_index = 0;
 	
 	break;
 	
-	case 1 :
+	case GAMEMODE.PERSO :
 	image_index = 1;
 	
 	break;
 	
-	case 2 :
+	case GAMEMODE.MULTI :
 	image_index = 2;
 	
 	break;

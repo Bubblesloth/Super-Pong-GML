@@ -15,11 +15,11 @@ draw_set_font(TitleFont)
 draw_text(room_width/2, 50, "Select Difficulty")
 
 
-switch(global.GMchoice){
+switch(global.Gamemodechoice){
 // case 0 : solo case 2 : multi
 // Pour affichier mouse et score en solo et pas en multi
 
-case 0:
+case GAMEMODE.CLASSIC:
 
 	//Display EASY
 
@@ -48,7 +48,7 @@ case 0:
 
 break;
 
-case 2 :
+case GAMEMODE.MULTI :
 
 	//Display EASY
 
@@ -73,9 +73,9 @@ break;
 //	Selecting	//
 //////////////////
 
-switch(global.GMchoice){
+switch(global.Gamemodechoice){
 	
-	case 0: //DEBUT GAMEMODE NORMAL
+	case GAMEMODE.CLASSIC: //DEBUT GAMEMODE NORMAL
 
 switch (selectdifficulty){
 	
@@ -160,7 +160,7 @@ switch (selectdifficulty){
 	
 	
 	
-	case 2: //DEBUT NOUVEAU GAMEMODE MULTI
+	case GAMEMODE.MULTI: //DEBUT NOUVEAU GAMEMODE MULTI
 	
 	switch (selectdifficulty){
 	

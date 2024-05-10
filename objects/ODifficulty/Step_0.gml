@@ -19,9 +19,9 @@ if down{
 	audio_play_sound(Select, 3, false);
 	selectdifficulty+=1}
 	
-switch(global.GMchoice){
+switch(global.Gamemodechoice){
 	
-	case 0:
+	case GAMEMODE.CLASSIC:
 	
 		if selectdifficulty < 1{
 			selectdifficulty=5}
@@ -31,7 +31,7 @@ switch(global.GMchoice){
 			
 	break;
 	
-	case 2:
+	case GAMEMODE.MULTI:
 	
 		if selectdifficulty < 1{
 			selectdifficulty=3}

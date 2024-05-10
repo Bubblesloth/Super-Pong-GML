@@ -93,6 +93,7 @@
     {"id":{"name":"rTitleScreen","path":"rooms/rTitleScreen/rTitleScreen.yy",},},
     {"id":{"name":"BallSpeed","path":"scripts/BallSpeed/BallSpeed.yy",},},
     {"id":{"name":"difficulty_enum","path":"scripts/difficulty_enum/difficulty_enum.yy",},},
+    {"id":{"name":"gamemode_enum","path":"scripts/gamemode_enum/gamemode_enum.yy",},},
     {"id":{"name":"RespawnMatch","path":"scripts/RespawnMatch/RespawnMatch.yy",},},
     {"id":{"name":"scr_load","path":"scripts/scr_load/scr_load.yy",},},
     {"id":{"name":"scr_save","path":"scripts/scr_save/scr_save.yy",},},

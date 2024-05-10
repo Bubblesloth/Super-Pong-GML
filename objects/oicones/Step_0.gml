@@ -27,7 +27,7 @@ if menu < 0{
 switch (menu){
 	case 0 :
 	image_index = 0;
-	global.GMchoice = 0;
+	global.Gamemodechoice = 0;
 	if enter{
 		audio_play_sound(Select, 3, false);
 		room_goto(rDifficulty);}
@@ -36,14 +36,14 @@ switch (menu){
 	
 	case 1 :
 	image_index = 1;
-		global.GMchoice = 1;
+		global.Gamemodechoice = 1;
 	
 	break;
 	
 	case 2 :
 	
 	image_index = 2;
-	global.GMchoice = 2;
+	global.Gamemodechoice = 2;
 	if enter{
 		audio_play_sound(Select, 3, false);
 		room_goto(rMultiGM);}
@@ -52,7 +52,7 @@ switch (menu){
 	
 	case 3 :
 	image_index = 3;
-	global.GMchoice = 3;
+	global.Gamemodechoice = 3;
 	if enter{
 		audio_play_sound(Select, 3, false);
 		room_goto(rGame);}
