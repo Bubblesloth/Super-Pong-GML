@@ -91,7 +91,7 @@ switch (selectdifficulty){
 			global.mousegamemode = false;
 			room_goto(rGame);
 		}
-		
+
 	break;
 	
 	case 2:
