@@ -4,12 +4,20 @@ if room != rMultiGM{
 
 if instance_exists(oBalle){
 	var diff = oBalle.y - y; //Calculer la différence ex : 160 - 220 = -60
+	if global.difficulty == DIFFICULTY.MOUSEMODE{	//Pour pas que l'ennemi tremble en mousemode où la balle va trop vite. APPLIQUABLE SUR D'AUTRES DIFFICULTES ET GM OU CA VA TROP VITE.
+	var diffmax = oBalle.maxspeed - 15}	//Pour que l'écart soit plus grand, dur à expliquer faut tester sans pour voir la diff (valeur choisi au pif on peut changer)
+	else{ var diffmax = 15}
 	
-	if abs(diff) > 15{ //Si 60 est plus grand que 15 alors il va bouger (si balle est assez éloignée du centre y de la paddle)
+	if abs(diff) > diffmax{ //Si 60 est plus grand que 15 alors il va bouger (si balle est assez éloignée du centre y de la paddle)
 		if dontmove=false{ //Pour empêcher le player de bouger
 		y += (speedy * sign(diff));} // 7 * -1 = y += -7   Sign transfore -X en -1 ou +X en 1
-	}   else {
-		y += (abs(diff)/15) * (speedy * sign(diff)); //Si la balle est proche de la paddle alors il va monter ou descendre à une vitesse définie par la différence. ex : 0,666 * (5 * 1) = y += 3,333
+	}  
+	else {
+		if global.difficulty == DIFFICULTY.MOUSEMODE{	//Pour pas que l'ennemi tremble en mousemode où la balle va trop vite. APPLIQUABLE SUR D'AUTRES DIFFICULTES ET GM OU CA VA TROP VITE.
+			y += (abs(diff)/15) * (20 * sign(diff));}	
+			else{
+				y += (abs(diff)/15) * (speedy * sign(diff)); //Si la balle est proche de la paddle alors il va monter ou descendre à une vitesse définie par la différence. ex : 0,666 * (5 * 1) = y += 3,333
+			}
 }		}
 
 

@@ -6,29 +6,33 @@ function BallSpeed(){
 		
 		case DIFFICULTY.EASY :
 		
-			oBalle.speed = 10;
+			speed = 10;
 			maxspeed = 26
+			accel = 1.080
 		
 		break;
 		
 		case DIFFICULTY.MEDIUM :
 		
-			oBalle.speed = 13
+			speed = 13
 			maxspeed = 31
+			accel = 1.080
 		
 		break;
 		
 		case DIFFICULTY.HARD :
 			
-			oBalle.speed = 17
+			speed = 17
 			maxspeed = 32
+			accel = 1.070
 		
 		break;
 		
 		case DIFFICULTY.MOUSEMODE:
 		
-			oBalle.speed = 17
-			maxspeed = 35
+			speed = 17
+			maxspeed = 42
+			accel = 1.050
 			
 		break;
 			
@@ -36,6 +40,7 @@ function BallSpeed(){
 
 	}
 	else if room == rTitleScreen{
-		oBalle.speed = 10
-		maxspeed = 30}
+		speed = 10
+		maxspeed = 30
+		accel = 1.080}
 }

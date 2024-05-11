@@ -133,7 +133,7 @@ if place_meeting(x,y,oPlayer){
 
 	if speed < maxspeed{
 		
-		speed *= 1.080
+		speed *= accel
 		
 	}
 	
