@@ -57,7 +57,7 @@
     {"id":{"name":"ODifficulty","path":"objects/ODifficulty/ODifficulty.yy",},},
     {"id":{"name":"oDownCollision","path":"objects/oDownCollision/oDownCollision.yy",},},
     {"id":{"name":"oEffetMignon","path":"objects/oEffetMignon/oEffetMignon.yy",},},
-    {"id":{"name":"oEnnemie","path":"objects/oEnnemie/oEnnemie.yy",},},
+    {"id":{"name":"oEnnemi","path":"objects/oEnnemi/oEnnemi.yy",},},
     {"id":{"name":"oFireball","path":"objects/oFireball/oFireball.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
     {"id":{"name":"oGMname","path":"objects/oGMname/oGMname.yy",},},

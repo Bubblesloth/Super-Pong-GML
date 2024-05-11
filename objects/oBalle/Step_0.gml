@@ -5,7 +5,7 @@
 //Bounce aux murs
 
 /*if room != rGame{
-if y < sprite_height/2 direction *= -1; //si la balle fait 60 pixels, alors /2 elle fait 30... Donc si y est plus petit que 30 donc si la balle est tt en haut et que l'origine et en dessous de 30, alors ça veut dire que le moitiée haut de la balle touche le plafond et doit donc rebondir avec le *=-1 déjà expliqué dans oEnnemie
+if y < sprite_height/2 direction *= -1; //si la balle fait 60 pixels, alors /2 elle fait 30... Donc si y est plus petit que 30 donc si la balle est tt en haut et que l'origine et en dessous de 30, alors ça veut dire que le moitiée haut de la balle touche le plafond et doit donc rebondir avec le *=-1 déjà expliqué dans oEnnemi
 else if y > room_height	- sprite_height/2 direction *= -1; //Pareil mais pour rebondir en bas, room = 768, ensuite - 30 = 738 et c'est pareil ensuite mais avec plus grand que}
 ///ATTENTION, les collisions pour bounce sont plus bas, ici c'est un au cas où.
 }*/
@@ -152,10 +152,10 @@ if place_meeting(x,y,oPlayer){
 }
 
 /////////////////////
-//Collision ennemie//
+//Collision ennemi//
 /////////////////////
 
-if place_meeting(x,y,oEnnemie){
+if place_meeting(x,y,oEnnemi){
 
 	x-=speed  // POUR NE PAS PASSER A TRAVERS (8mois pour trouver ça)
 	
@@ -167,8 +167,8 @@ if place_meeting(x,y,oEnnemie){
 
 	if x < (room_width - 100){
 
-		var dif = oEnnemie.y - y; // y balle - y player    ex : 190 - 220 = -30      MAIS si on utilise abs() ça va donner 30 car 30 est la valeur absolue
-		var maxx = oEnnemie.sprite_height/2; //Moitié du player
+		var dif = oEnnemi.y - y; // y balle - y player    ex : 190 - 220 = -30      MAIS si on utilise abs() ça va donner 30 car 30 est la valeur absolue
+		var maxx = oEnnemi.sprite_height/2; //Moitié du player
 		var ratio = (dif/maxx) * angle; //différence DIVISE par moitié du paddle MULTIPLIE par l'angle pas exacte
 
 		if room != rTitleScreen{
@@ -198,7 +198,7 @@ if place_meeting(x,y,oEnnemie){
 	//Fire Shot
 	
 	if instance_exists(oFireball){
-		with (oEnnemie) image_blend = c_red;
+		with (oEnnemi) image_blend = c_red;
 		//Suite pour qu'il redevienne blanc dans l'other
 	}
 

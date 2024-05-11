@@ -13,7 +13,7 @@ if global.firstlaunch = true{
 if oIntroPart1.timer == 739 - firstL - oIntroPart1.firstL{
 	instance_create_layer(x, y, "Instances", oBalle);
 	instance_create_layer(x, y, "Instances", oPlayer);
-	instance_create_layer(x, y, "Instances", oEnnemie);
+	instance_create_layer(x, y, "Instances", oEnnemi);
 	instance_create_layer(x, y, "Instances", oScore);
 	instance_create_layer(x, y, "Instances", oSoftLockBall);
 	oScore.visible = false}
@@ -22,7 +22,7 @@ else{
 		if spawntitlescreen = true{
 		instance_create_layer(x, y, "Instances", oBalle);
 		instance_create_layer(x, y, "Instances", oPlayer);
-		instance_create_layer(x, y, "Instances", oEnnemie);
+		instance_create_layer(x, y, "Instances", oEnnemi);
 		instance_create_layer(x, y, "Instances", oScore);
 		instance_create_layer(x, y, "Instances", oSoftLockBall);
 		oScore.visible = false
@@ -46,7 +46,7 @@ if room == rGame{
 		instance_create_layer(x, y, "Instances", oBalle);
 		instance_create_layer(x, y, "Instances", oPlayer);
 		instance_create_layer(x, y, "Instances", oScore);
-		if (!global.multi) instance_create_layer(x, y, "Instances", oEnnemie);
+		if (!global.multi) instance_create_layer(x, y, "Instances", oEnnemi);
 		else instance_create_layer(x, y, "Instances", oPlayer2);
 	spawngame=false
 	}

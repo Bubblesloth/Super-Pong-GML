@@ -1,4 +1,4 @@
-/*Cette fonction va permettre (avec des variables qui interagissent dans les objets concercés) de faire respawn oPLayer, oBalle et oEnnemie
+/*Cette fonction va permettre (avec des variables qui interagissent dans les objets concercés) de faire respawn oPLayer, oBalle et oEnnemi
 quand un but est marqué et de les faire attendre un peu*/
 
 function RespawnMatch(){
@@ -25,13 +25,13 @@ function RespawnMatch(){
 	oPlayer.dontmove = true;
 	oPlayer.timerdm = 1;
 	
-	//Ennemie
+	//Ennemi
 	if !instance_exists(oPlayer2){
 	
-	oEnnemie.x = room_width - 100
-	oEnnemie.y = room_height/2
-	oEnnemie.dontmove = true;
-	oEnnemie.timerdm = 1;
+	oEnnemi.x = room_width - 100
+	oEnnemi.y = room_height/2
+	oEnnemi.dontmove = true;
+	oEnnemi.timerdm = 1;
 	}
 	else{
 		oPlayer2.x = room_width - 100

@@ -21,7 +21,7 @@
     {"name":"ODifficulty","order":9,"path":"objects/ODifficulty/ODifficulty.yy",},
     {"name":"oDownCollision","order":3,"path":"objects/oDownCollision/oDownCollision.yy",},
     {"name":"oEffetMignon","order":3,"path":"objects/oEffetMignon/oEffetMignon.yy",},
-    {"name":"oEnnemie","order":2,"path":"objects/oEnnemie/oEnnemie.yy",},
+    {"name":"oEnnemi","order":2,"path":"objects/oEnnemi/oEnnemi.yy",},
     {"name":"oFireball","order":1,"path":"objects/oFireball/oFireball.yy",},
     {"name":"oGame","order":5,"path":"objects/oGame/oGame.yy",},
     {"name":"oGMname","order":2,"path":"objects/oGMname/oGMname.yy",},

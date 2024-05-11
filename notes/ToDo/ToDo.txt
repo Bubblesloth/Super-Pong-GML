@@ -26,11 +26,11 @@ Le mode classique
 
 Mode classique avec niveaux de difficultés suivant la vitesse du bot et de la balle
 
-Le mode score où soit l'ennemie renvoie à tous les coups et on doit avoir un max de frappes, soit pareil mais on frappe contre un mur
+Le mode score où soit l'ennemi renvoie à tous les coups et on doit avoir un max de frappes, soit pareil mais on frappe contre un mur
 	
-Un mode avec un ennemie au centre qui nous lance des projectiles à éviter mais si on tire sur l'ennemie, il va attaquer la paddle ennemie et inversement ~~~
+Un mode avec un ennemi au centre qui nous lance des projectiles à éviter mais si on tire sur l'ennemi, il va attaquer la paddle ennemi et inversement ~~~
 
-Un mode où moi je suis bleu, l'ennemie vert ou jsp comment, et il y a au millieu un coeur avec une moitié vert de mon côté et une moitié bleu de son côté et on doit chacun tuer l'adversaire en renvoyant la balle sur le coeur
+Un mode où moi je suis bleu, l'ennemi vert ou jsp comment, et il y a au millieu un coeur avec une moitié vert de mon côté et une moitié bleu de son côté et on doit chacun tuer l'adversaire en renvoyant la balle sur le coeur
 
 Voir pour un mode avec plusieurs balles
 
@@ -48,7 +48,7 @@ Un jour régler le bug des murs peut-être (aled)
 Mode DE JEU SYMPA
 
 Un jeu pong mais j'ai des obstacles qui popent genre des murs qui popent et je dois cliquer dessus en même temps avec la souris pour les supprimer.
-Il faut que les murs m'embêtent que moi donc par exemples quand je tire la balle elle est bleu, et quand c'est l'ennemie elle est rouge
+Il faut que les murs m'embêtent que moi donc par exemples quand je tire la balle elle est bleu, et quand c'est l'ennemi elle est rouge
 Et donc les murs obstacles sont bleus pour que je comprenne que seul ma balle les touches.
 
 MODE DE JEU SYMPA 2
