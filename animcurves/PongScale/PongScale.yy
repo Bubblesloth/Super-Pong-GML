@@ -15,8 +15,8 @@
   "function":2,
   "name":"PongScale",
   "parent":{
-    "name":"Courbes d’animation",
-    "path":"folders/Courbes d’animation.yy",
+    "name":"Pong",
+    "path":"Pong.yyp",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

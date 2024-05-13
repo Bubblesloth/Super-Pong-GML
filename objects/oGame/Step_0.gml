@@ -2,6 +2,7 @@ if room == rGame || room == rDifficulty{
 	if echap{
 		audio_play_sound(Select, 3, false)
 		if (global.multi) global.multi=false
+		window_set_cursor(cr_default)
 		room_goto(rSelectGM)}
 }
 

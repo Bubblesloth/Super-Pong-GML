@@ -1,8 +1,9 @@
 if global.difficulty == DIFFICULTY.MOUSEMODE{
 	y = mouse_y
+	window_set_cursor(cr_none)
 }
 else{
-
+	window_set_cursor(cr_default)
 	//On met les variables de déplacement en place
 		var up = global.up
 		var down = global.down
