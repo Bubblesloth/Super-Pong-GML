@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"difficulty_enum",
   "isCompatibility":false,
   "isDnD":false,

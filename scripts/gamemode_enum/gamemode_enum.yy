@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"gamemode_enum",
   "isCompatibility":false,
   "isDnD":false,

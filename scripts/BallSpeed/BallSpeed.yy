@@ -1,5 +1,5 @@
 {
-  "$GMScript":"",
+  "$GMScript":"v1",
   "%Name":"BallSpeed",
   "isCompatibility":false,
   "isDnD":false,
