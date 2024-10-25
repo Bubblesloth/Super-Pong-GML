@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"Ennemy_Point.wav",
   "type":0,
-  "volume":0.24,
+  "volume":0.12,
 }

@@ -13,7 +13,7 @@ switch(global.difficulty){
 	break;
 	
 	case DIFFICULTY.MEDIUM :
-		speedy = 13
+		speedy = 14
 	break;
 	
 	case DIFFICULTY.HARD :

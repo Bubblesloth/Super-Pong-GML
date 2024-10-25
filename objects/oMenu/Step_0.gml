@@ -1,3 +1,5 @@
+
+
 //Commandes
 
 var up = global.up_pressed;
@@ -70,7 +72,7 @@ switch (menu){
 		image_index	= 0
 		if enter{
 			global.firstlaunch = false
-			room_goto(rSelectGM);
+			room_goto(rMultiGM);
 			audio_play_sound(Select, 3, false)
 			}
 	break;
@@ -88,7 +90,7 @@ switch (menu){
 		image_index = 2
 		if enter{
 			global.firstlaunch = false
-			show_message("All made by Bubblesloth with GameMaker (lol, do you really think make the credits is my priority)");
+			url_open("https://bubblesloth.itch.io")
 			audio_play_sound(Select, 3, false)
 			}
 	break;

@@ -43,7 +43,7 @@ switch (menu){
 	case 2 :
 	
 	image_index = 2;
-	global.Gamemodechoice = 2;
+	global.Gamemodechoice = 0;
 	if enter{
 		audio_play_sound(Select, 3, false);
 		room_goto(rMultiGM);}

@@ -23,22 +23,22 @@ switch(global.Gamemodechoice){
 	
 	case GAMEMODE.CLASSIC:
 	
-		if selectdifficulty < 1{
-			selectdifficulty=5}
+		if global.multi == false && global.online == false{
+			if selectdifficulty < 1{
+				selectdifficulty=5}
 	
-		if selectdifficulty > 5{
-			selectdifficulty=1}
+			if selectdifficulty > 5{
+				selectdifficulty=1}
+		}
+		else{	
+			if selectdifficulty < 1{
+				selectdifficulty=3}
+	
+			if selectdifficulty > 3{
+				selectdifficulty=1}
+		}
 			
 	break;
 	
-	case GAMEMODE.MULTI:
-	
-		if selectdifficulty < 1{
-			selectdifficulty=3}
-	
-		if selectdifficulty > 3{
-			selectdifficulty=1}
-			
-	break;
 	
 }

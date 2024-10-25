@@ -3,7 +3,7 @@ if room == rGame || room == rDifficulty{
 		audio_play_sound(Select, 3, false)
 		if (global.multi) global.multi=false
 		window_set_cursor(cr_default)
-		room_goto(rSelectGM)}
+		room_goto(rTitleScreen)}
 }
 
 // TITLESCREEN
@@ -108,43 +108,43 @@ if (!global.online){
 	}
 
 	//P1multilocal
-	if global.multi == true{
+	if (global.multicommands){
 	
 		switch(global.commandsetmulti){
 	
-		case 0:
+			case 0:
 	
-		global.up = keyboard_check(vk_up);
-		global.down = keyboard_check(vk_down);
-		global.left = keyboard_check(vk_left);
-		global.right = keyboard_check(vk_right);
+			global.up = keyboard_check(vk_up);
+			global.down = keyboard_check(vk_down);
+			global.left = keyboard_check(vk_left);
+			global.right = keyboard_check(vk_right);
 	
-		break;
+			break;
 
-		case 1:
+			case 1:
 	
-		global.up = keyboard_check(ord("W"));
-		global.down = keyboard_check(ord("S"));
-		global.left = keyboard_check(ord("A"));
-		global.right = keyboard_check(ord("D"));
+			global.up = keyboard_check(ord("W"));
+			global.down = keyboard_check(ord("S"));
+			global.left = keyboard_check(ord("A"));
+			global.right = keyboard_check(ord("D"));
 	
-		break;
+			break;
 
-		case 2:
+			case 2:
 	
-		global.up = keyboard_check(ord("Z"));
-		global.down = keyboard_check(ord("S"));
-		global.left = keyboard_check(ord("Q"));
-		global.right = keyboard_check(ord("D"));
+			global.up = keyboard_check(ord("Z"));
+			global.down = keyboard_check(ord("S"));
+			global.left = keyboard_check(ord("Q"));
+			global.right = keyboard_check(ord("D"));
 
-		break;
+			break;
 		}
 	
 	}
 
 	// PLAYER 2
 
-	if (global.multi == true){
+	if (global.multicommands){
 		switch(global.p2commandset){
 		
 			case 0:

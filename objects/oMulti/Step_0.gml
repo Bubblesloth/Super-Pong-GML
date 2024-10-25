@@ -2,7 +2,7 @@
 
 if echap{
 	audio_play_sound(Select, 3, false)
-	room_goto(rDifficulty)}
+	room_goto(rTitleScreen)}
 	
 
 	////////////////////////
@@ -43,7 +43,7 @@ if player == 1{
 }
 
 if player == 2{
-	if enter == false{ //Pour pas que ça spam espace (jsp pourquoi j'ai pas fais espace_pressed mais ça change rien à part de l'opti inutile dans ce contexte on est pas en 1988 c'est bon[après relecture de ce passage de nombreux mois plus tard, je trouve ça honteux ce que j'ai dis, l'opti c'est important nan mais oh])
+	if enter == false{ //Pour pas que ça spam espace 
 		PAble = true}
 	if enter && PAble == true{
 		audio_play_sound(Select, 3, false);
@@ -77,6 +77,7 @@ else{
 
 		global.p2commandset = commandsP2
 		
-		global.multi = true //ça sert à savoir si on créer un ennemi ou un Player2
+		global.multicommands = true //Pour indiquer que oGame peut assigner les commandes (sinon erreur)
+		//global.multi = true //ça sert à savoir si on créer un ennemi ou un Player2
 		room_goto(rGame)
 }

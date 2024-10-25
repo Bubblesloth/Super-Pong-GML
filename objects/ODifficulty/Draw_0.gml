@@ -16,54 +16,53 @@ draw_text(room_width/2, 50, "Select Difficulty")
 
 
 switch(global.Gamemodechoice){
-// case 0 : solo case 2 : multi
+
 // Pour affichier mouse et score en solo et pas en multi
 
 case GAMEMODE.CLASSIC:
 
-	//Display EASY
+	if global.multi == false && global.online == false{
+		//Display EASY
 
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 200, "EASY")
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 200, "EASY")
 
-	//Display Medium
+		//Display Medium
 
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 300, "MEDIUM")
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 300, "MEDIUM")
 
-	//Display HARD
+		//Display HARD
 
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 400, "HARD")
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 400, "HARD")
 
-	//Display Mouse
+		//Display Mouse
 
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 500, "Mouse Mode")
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 500, "Mouse Mode")
 
-	//Display Scoremode
+		//Display Scoremode
 
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 600, "Score Mode")
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 600, "Score Mode")
+	}
+	else{
+		//Display EASY
 
-break;
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 300, "EASY")
 
-case GAMEMODE.MULTI :
+		//Display Medium
 
-	//Display EASY
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 400, "MEDIUM")
 
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 300, "EASY")
+		//Display HARD
 
-	//Display Medium
-
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 400, "MEDIUM")
-
-	//Display HARD
-
-	draw_set_font(GameFont)
-	draw_text(room_width/2, 500, "HARD")
+		draw_set_font(GameFont)
+		draw_text(room_width/2, 500, "HARD")
+	}
 
 break;
 
@@ -77,63 +76,65 @@ switch(global.Gamemodechoice){
 	
 	case GAMEMODE.CLASSIC: //DEBUT GAMEMODE NORMAL
 
-switch (selectdifficulty){
+		//SOLO
+		if global.multi == false && global.online == false{
+			switch (selectdifficulty){
 	
-	case 1:
+			case 1:
 	
-		draw_set_font(GameFont)
-		draw_set_color(#85b4ff)
-		draw_text(room_width/2, 200, "EASY")
+				draw_set_font(GameFont)
+				draw_set_color(#85b4ff)
+				draw_text(room_width/2, 200, "EASY")
 		
-		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.EASY;
-			room_goto(rGame);
-		}
+				if enter{
+					audio_play_sound(Select, 3, false);
+					global.difficulty = DIFFICULTY.EASY;
+					room_goto(rGame);
+				}
 
-	break;
+			break;
 	
-	case 2:
+			case 2:
 	
-		draw_set_font(GameFont)
-		draw_set_color(#85b4ff)
-		draw_text(room_width/2, 300, "MEDIUM")
+				draw_set_font(GameFont)
+				draw_set_color(#85b4ff)
+				draw_text(room_width/2, 300, "MEDIUM")
 		
-		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.MEDIUM;
-			room_goto(rGame);
-		}
+				if enter{
+					audio_play_sound(Select, 3, false);
+					global.difficulty = DIFFICULTY.MEDIUM;
+					room_goto(rGame);
+				}
 		
-	break;
+			break;
 
-	case 3:
+			case 3:
 	
-		draw_set_font(GameFont)
-		draw_set_color(#85b4ff)
-		draw_text(room_width/2, 400, "HARD")
+				draw_set_font(GameFont)
+				draw_set_color(#85b4ff)
+				draw_text(room_width/2, 400, "HARD")
 		
-		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.HARD;
-			room_goto(rGame);
-		}
+				if enter{
+					audio_play_sound(Select, 3, false);
+					global.difficulty = DIFFICULTY.HARD;
+					room_goto(rGame);
+				}
 		
-	break;
+			break;
 	
-	case 4:
+			case 4:
 	
-		draw_set_font(GameFont)
-		draw_set_color(#85b4ff)
-		draw_text(room_width/2, 500, "Mouse Mode")
+				draw_set_font(GameFont)
+				draw_set_color(#85b4ff)
+				draw_text(room_width/2, 500, "Mouse Mode")
 		
-		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.MOUSEMODE;
-			room_goto(rGame);
-		}
+				if enter{
+					audio_play_sound(Select, 3, false);
+					global.difficulty = DIFFICULTY.MOUSEMODE;
+					room_goto(rGame);
+				}
 		
-	break;
+			break;
 	
 	case 5:
 	
@@ -149,61 +150,58 @@ switch (selectdifficulty){
 		
 	break;
 }
+		}
+		//MULTI
+		else{
+			switch (selectdifficulty){
+	
+				case 1:
+	
+					draw_set_font(GameFont)
+					draw_set_color(#85b4ff)
+					draw_text(room_width/2, 300, "EASY")
+		
+					if enter{
+						audio_play_sound(Select, 3, false);
+						global.difficulty = DIFFICULTY.EASY;
+						global.start_local = true
+						room_goto(rMultiGM);
+					}
+		
+				break;
+	
+				case 2:
+	
+					draw_set_font(GameFont)
+					draw_set_color(#85b4ff)
+					draw_text(room_width/2, 400, "MEDIUM")
+		
+					if enter{
+						audio_play_sound(Select, 3, false);
+						global.difficulty = DIFFICULTY.MEDIUM;
+						global.start_local = true
+						room_goto(rMultiGM);
+					}
+		
+				break;
 
+				case 3:
+	
+					draw_set_font(GameFont)
+					draw_set_color(#85b4ff)
+					draw_text(room_width/2, 500, "HARD")
+		
+					if enter{
+						audio_play_sound(Select, 3, false);
+						global.difficulty = DIFFICULTY.HARD;
+						global.start_local = true
+						room_goto(rMultiGM);
+					}
+		
+				break;
+				}
+		}
 	break; //FIN GAMEMODE NORMAL
 	
 	
-	
-	
-	case GAMEMODE.MULTI: //DEBUT NOUVEAU GAMEMODE MULTI
-	
-	switch (selectdifficulty){
-	
-	case 1:
-	
-		draw_set_font(GameFont)
-		draw_set_color(#85b4ff)
-		draw_text(room_width/2, 300, "EASY")
-		
-		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.EASY;
-			global.start_local = true
-			room_goto(rMultiGM);
-		}
-		
-	break;
-	
-	case 2:
-	
-		draw_set_font(GameFont)
-		draw_set_color(#85b4ff)
-		draw_text(room_width/2, 400, "MEDIUM")
-		
-		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.MEDIUM;
-			global.start_local = true
-			room_goto(rMultiGM);
-		}
-		
-	break;
-
-	case 3:
-	
-		draw_set_font(GameFont)
-		draw_set_color(#85b4ff)
-		draw_text(room_width/2, 500, "HARD")
-		
-		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.HARD;
-			global.start_local = true
-			room_goto(rMultiGM);
-		}
-		
-	break;
-	}
-	
-	break;  //FIN NOUVEAU GAMEMODE MULTI
 }

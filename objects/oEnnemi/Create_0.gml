@@ -19,7 +19,7 @@ if room != rTitleScreen{
 		break;
 		
 		case DIFFICULTY.MEDIUM :
-			speedy = 17
+			speedy = 16
 		break;
 		
 		case DIFFICULTY.HARD :
@@ -27,7 +27,7 @@ if room != rTitleScreen{
 		break;
 			
 		case DIFFICULTY.MOUSEMODE:
-			speedy = 27
+			speedy = 24
 		break;
 		
 	

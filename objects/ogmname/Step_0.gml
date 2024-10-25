@@ -1,21 +1,21 @@
-switch (global.Gamemodechoice){
+switch (oIcones.menu){
 	
-	case GAMEMODE.CLASSIC :
+	case 0 : //classic
 	image_index = 0;
 	
 	break;
 	
-	case GAMEMODE.PERSO :
+	case 1 : //perso
 	image_index = 1;
 	
 	break;
 	
-	case GAMEMODE.MULTI :
+	case 2 :
 	image_index = 2;
 	
 	break;
 	
-	case 3 :
+	case 3 : //?
 	image_index = 2;
 	
 	break;
