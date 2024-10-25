@@ -13,11 +13,11 @@ switch(global.difficulty){
 	break;
 	
 	case DIFFICULTY.MEDIUM :
-		speedy = 12
+		speedy = 13
 	break;
 	
 	case DIFFICULTY.HARD :
-		speedy=13
+		speedy=14
 	break;	
 	
 	case DIFFICULTY.MOUSEMODE:

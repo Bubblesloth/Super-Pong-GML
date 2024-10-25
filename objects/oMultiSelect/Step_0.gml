@@ -18,10 +18,16 @@ if (select < 0) select = 1
 if (select > 1) select = 0
 
 if select == 0{
-	if enter && global.start_local == false{
-		audio_play_sound(Select, 3, false)
-		global.online = true
-		room_goto(rOnlineMenu)
+		if enter && global.start_local == false{
+			if os_type == os_gxgames{
+				audio_play_sound(Select, 3, false)
+				global.online = true
+				room_goto(rOnlineMenu)
+			}
+			else{
+				onlineErrorMessage = true
+				//url_open() ouvrir le jeu sur GX.Games
+			}
 	}
 }
 else{

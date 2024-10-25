@@ -182,6 +182,15 @@ if (!global.online){
 // MULTI COMMANDES //
 /////////////////////
 
+
+
+
+
+
+
+
+
+
 //debug
 
 /*if keyboard_check(ord("R")){

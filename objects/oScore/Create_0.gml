@@ -3,5 +3,7 @@
 playerScore	= 0;
 enemyScore = 0;
 effect=false
-effectdo=false
+effectdo=false 
 timer = 0
+
+global.win = "nobody"

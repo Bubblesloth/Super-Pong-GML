@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rMultiGM",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rMultiGM/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,

@@ -31,7 +31,7 @@ if x < -sprite_width{ //Si touche le bord donc si x < -32 donc dés qu'il est to
 	RespawnMatch()
 }
 
-if x > room_width + sprite_width{ //Inverse d'au dessus réfléchis petit con (déso de t'insulter t'es bg)
+if x > room_width + sprite_width{ //Inverse d'au dessus
 	oScore.playerScore++;
 	oScore.effect = true;
 	oSoftLockBall.Ilyaeuunpoint = 1;
@@ -115,8 +115,8 @@ if place_meeting(x,y,oPlayer){
 
 	audio_play_sound(Bounce, 1, false)
 
-	if x > sprite_width/2{
-
+		if x > sprite_width/2{ // Je crois que cette condition ne sert à rien
+		
 		//var est utilisé pour définir que la variable est locale donc qu'elle existe juste pendant la collision
 		var dif = oPlayer.y - y; // y balle - y player    ex : 190 - 220 = -30      MAIS si on utilise abs() ça va donner 30 car 30 est la valeur absolue
 		var maxx = oPlayer.sprite_height/2; //Moitié du player ex : 55
@@ -128,6 +128,7 @@ if place_meeting(x,y,oPlayer){
 		else direction = ratio + random_range(-10, 10) //Pour ne pas buger la balle sur l'écran titre
 
 	}
+	else show_message("eh")
 
 	//increase speed on contact
 
@@ -246,12 +247,11 @@ if place_meeting(x,y,oPlayer2){
 	image_yscale -= 0.03
 
 	//Fire Shot
-	
+
 	if instance_exists(oFireball){
 		with (oPlayer2) image_blend = c_red;
 		//Suite pour qu'il redevienne blanc dans l'other
 	}
-
 }
 
 
@@ -270,13 +270,13 @@ if timerdm > 0
 		timerdm = 0;
 	}
 	else timerdm++
-} /**/
-
+}
 
 
 ///////////////
 // Décoratif //
 ///////////////
+
 
 //Angle
 
@@ -295,9 +295,7 @@ if instance_exists(oFireball)
 
 //Fire
 
-if 
-
-speed >= maxspeed
+if speed >= maxspeed
 	spawnfire = true
 	
 if spawnfire == true && !instance_exists(oFireball){
@@ -313,5 +311,6 @@ if mask_index != sBalle
 	//Pas très utile je crois genre si je le retire ça change rien
 	
 if keyboard_check(vk_alt){
-x = mouse_x
-y = mouse_y}
+	x = mouse_x
+	y = mouse_y
+}
