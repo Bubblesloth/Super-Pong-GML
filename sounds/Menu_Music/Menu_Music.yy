@@ -9,7 +9,7 @@
   "bitRate":512,
   "compression":0,
   "conversionMode":0,
-  "duration":175.38463,
+  "duration":206.81143,
   "name":"Menu_Music",
   "parent":{
     "name":"Menu",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":48000,
-  "soundFile":"menu_music.wav",
+  "soundFile":"Menu_Music.mp3",
   "type":1,
   "volume":1.0,
 }

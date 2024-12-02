@@ -1,6 +1,6 @@
 //Global variables setup
 
-global.firstlaunch = false
+global.firstlaunch = true
 global.difficulty = DIFFICULTY.EASY
 // = false                  ||Y avait écrit ça j'ai pas compris au lieu de suppr commentaire
 global.multi = false
@@ -22,3 +22,4 @@ room_goto(rTitleScreen)
 //Random
 
 randomize()
+

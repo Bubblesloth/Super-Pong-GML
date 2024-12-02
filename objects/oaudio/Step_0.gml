@@ -21,8 +21,8 @@ if global.musicOn = true && global.musicplaying = false{
 	audio_sound_gain(slot_5 , global.volumesfx, 0);
 	audio_sound_gain(Super_Pong_intro , global.volumesfx, 0);
 	audio_sound_gain(Bounce , global.volumesfx, 0);
-	
-	
+
+
 	global.musicplaying = true
 }
 
