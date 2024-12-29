@@ -60,7 +60,8 @@ if language = false{
 	if global.language = 0{
 draw_text(room_width/2, 660, "< English >");}
 	if global.language = 1{
-draw_text(room_width/2, 660, "< Francais >");}	
+//draw_text(room_width/2, 660, "< Francais >");}
+draw_text(room_width/2, 660, "< English >");}
 }
 
 
@@ -246,9 +247,12 @@ if language == true {
 			break;
 		
 		case 1:
+			/*draw_set_halign(fa_center);
+			draw_set_color(#85b4ff);
+			draw_text(room_width/2, 660, "< Francais >");*/
 			draw_set_halign(fa_center);
 			draw_set_color(#85b4ff);
-			draw_text(room_width/2, 660, "< Francais >");
+			draw_text(room_width/2, 660, "< English >");
 			break;
 		
 	}

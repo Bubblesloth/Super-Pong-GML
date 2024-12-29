@@ -208,11 +208,15 @@ if language == true{
 	sousmenu = true
 	if right{
 		languageselect += 1;
-		audio_play_sound(Select, 3, false);
+		//Changement de langue annulé :
+		if language == true audio_play_sound(Nope,0,false)
+		else audio_play_sound(Select, 3, false);
 	}
 	else if left{
 		languageselect -= 1;
-		audio_play_sound(Select, 3, false)
+		//Changement de langue annulé :
+		if language == true audio_play_sound(Nope,0,false)
+		else audio_play_sound(Select, 3, false);
 	}
 
 	if languageselect > 1{

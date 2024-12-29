@@ -26,5 +26,6 @@ if select == 2{
 }
 
 if onlineErrorMessage == true{
-	draw_text(room_width/2, 600, "You have to launch the game from GX.Games\nto play online");
+	//draw_text(room_width/2, 600, "You have to launch the game from GX.Games\nto play online");
+	draw_text(room_width/2, 600, "Coming soon");
 }

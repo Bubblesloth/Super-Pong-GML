@@ -143,9 +143,9 @@ switch(global.Gamemodechoice){
 		draw_text(room_width/2, 600, "Score Mode")
 		
 		if enter{
-			audio_play_sound(Select, 3, false);
-			global.difficulty = DIFFICULTY.SCOREMODE;
-			room_goto(rGame);
+			audio_play_sound(Nope, 3, false);
+			/*global.difficulty = DIFFICULTY.SCOREMODE;
+			room_goto(rGame);*/
 		}
 		
 	break;

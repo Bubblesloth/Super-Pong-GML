@@ -70,6 +70,7 @@
     {"name":"Bounce","order":1,"path":"sounds/Bounce/Bounce.yy",},
     {"name":"Ennemy_Point","order":3,"path":"sounds/Ennemy_Point/Ennemy_Point.yy",},
     {"name":"Menu_Music","order":9,"path":"sounds/Menu_Music/Menu_Music.yy",},
+    {"name":"Nope","order":5,"path":"sounds/Nope/Nope.yy",},
     {"name":"Point","order":2,"path":"sounds/Point/Point.yy",},
     {"name":"Select","order":4,"path":"sounds/Select/Select.yy",},
     {"name":"slot_1","order":4,"path":"sounds/slot_1/slot_1.yy",},

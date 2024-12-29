@@ -39,7 +39,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.11.0.179",
   },
   "name":"Pong",
   "resources":[
@@ -101,6 +101,7 @@
     {"id":{"name":"Bounce","path":"sounds/Bounce/Bounce.yy",},},
     {"id":{"name":"Ennemy_Point","path":"sounds/Ennemy_Point/Ennemy_Point.yy",},},
     {"id":{"name":"Menu_Music","path":"sounds/Menu_Music/Menu_Music.yy",},},
+    {"id":{"name":"Nope","path":"sounds/Nope/Nope.yy",},},
     {"id":{"name":"PAM","path":"sounds/PAM/PAM.yy",},},
     {"id":{"name":"Point","path":"sounds/Point/Point.yy",},},
     {"id":{"name":"Select","path":"sounds/Select/Select.yy",},},
